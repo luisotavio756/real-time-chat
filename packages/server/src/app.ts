@@ -1,6 +1,7 @@
 import express, { Application } from 'express';
 import http, { Server } from 'http';
 import { setupWebSocket } from './web-socket';
+import './database';
 
 class App {
   public app: Application;
