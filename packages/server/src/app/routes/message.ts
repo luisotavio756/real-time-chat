@@ -3,6 +3,6 @@ import MessageController from '@app/controllers/MessageController';
 
 const messageRoutes = Router();
 
-messageRoutes.post('/messages', MessageController.store);
+messageRoutes.post('/', MessageController.store);
 
 export default messageRoutes;

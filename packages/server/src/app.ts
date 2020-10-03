@@ -1,5 +1,6 @@
 import express, { Application } from 'express';
 import http, { Server } from 'http';
+import routes from '@app/routes';
 import { setupWebSocket } from './web-socket';
 import './database';
 
@@ -19,6 +20,7 @@ class App {
 
   middlewares() {
     this.app.use(express.json());
+    this.app.use(routes);
   }
 }
 

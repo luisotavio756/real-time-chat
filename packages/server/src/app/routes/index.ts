@@ -1,7 +1,8 @@
 import { Router } from 'express';
+import messageRoutes from './message';
 
 class Routes {
-  private routes: Router;
+  public routes: Router;
 
   constructor() {
     this.routes = Router();
@@ -9,10 +10,8 @@ class Routes {
   }
 
   matchRoutes() {
-    this.routes.use('/', (request, response) => {
-      return response.json('Olá mundo!');
-    });
+    this.routes.use('/messages', messageRoutes);
   }
 }
 
-export default new Routes();
+export default new Routes().routes;
