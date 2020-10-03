@@ -1,0 +1,21 @@
+{
+  "name": "socketio",
+  "version": "1.0.0",
+  "main": "index.js",
+  "workspaces": {
+    "packages": [
+      "packages/*"
+    ]
+  },
+  "private": true,
+  "scripts": {
+    "dev:api": "cd packages/server && yarn dev:server",
+    "dev:web": "cd packages/web && yarn start",
+    "lint:web": "cd packages/web && yarn eslint --ext .ts,.tsx --fix ."
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@monorepo/eslint-config": "*",
+    "typescript": "^4.0.3"
+  }
+}
