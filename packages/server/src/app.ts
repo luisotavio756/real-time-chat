@@ -1,7 +1,9 @@
 import express, { Application } from 'express';
 import http, { Server } from 'http';
+import cors from 'cors';
 import routes from '@app/routes';
 import { setupWebSocket } from './web-socket';
+import 'dotenv/config';
 import './database';
 
 class App {
@@ -19,6 +21,7 @@ class App {
   }
 
   middlewares() {
+    this.app.use(cors());
     this.app.use(express.json());
     this.app.use(routes);
   }
