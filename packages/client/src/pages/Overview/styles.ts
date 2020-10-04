@@ -6,6 +6,7 @@ export const Container = styled.div`
   min-height: 100vh;
 
   flex-direction: column;
+  padding: 0 12px;
 `;
 
 export const Header = styled.header`
@@ -87,7 +88,7 @@ export const Messages = styled.div`
 
 export const InputContainer = styled.div`
   max-width: 750px;
-  width: 100%;
+  width: calc(100% - 24px);
   position: fixed;
   bottom: 0px;
   left: 50%;
