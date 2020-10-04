@@ -10,8 +10,8 @@
   "private": true,
   "scripts": {
     "dev:api": "cd packages/server && yarn dev:server",
-    "dev:web": "cd packages/web && yarn start",
-    "lint:web": "cd packages/web && yarn eslint --ext .ts,.tsx --fix ."
+    "dev:client": "cd packages/client && yarn start",
+    "lint:client": "cd packages/client && yarn eslint --ext .ts,.tsx --fix ."
   },
   "license": "MIT",
   "devDependencies": {
