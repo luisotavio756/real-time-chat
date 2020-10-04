@@ -38,6 +38,7 @@
   },
   "devDependencies": {
     "@types/react-router-dom": "^5.1.5",
+    "@types/socket.io-client": "^1.4.34",
     "@types/styled-components": "^5.1.3"
   }
 }

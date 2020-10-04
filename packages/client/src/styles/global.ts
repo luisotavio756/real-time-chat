@@ -9,12 +9,12 @@ export default createGlobalStyle`
   }
 
   body {
-    /* background: #312E38; */
-    /* color: #fff; */
+    background: #312E38;
+    color: #fff;
     -webkit-font-smoothing: antialiased;
   }
 
-  body, button, input {
+  body, button, input, textarea {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
   }
