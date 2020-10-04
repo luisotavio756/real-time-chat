@@ -3,6 +3,12 @@ import Message from '@app/schemas/MessageSchema';
 import { emitMessage } from '../../web-socket';
 
 export default {
+  async index(request: Request, response: Response): Promise<Response> {
+    const messages = await Message.find();
+
+    return response.json(messages);
+  },
+
   async store(request: Request, response: Response): Promise<Response> {
     const { name, text } = request.body;
 
